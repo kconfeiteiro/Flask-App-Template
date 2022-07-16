@@ -1,0 +1,150 @@
+/* Contact page styling */
+#researchers {
+    margin: 0mm;
+    border: 0mm;
+    padding: 0mm;
+}
+
+#role {
+    margin: 0mm;
+    border: 0mm;
+    padding: 0mm;
+    margin-bottom: 10px;
+}
+
+#creds {
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+h2 {
+    text-align: center;
+}
+
+#sidebar {
+    text-align: center;
+    font-size: x-large;
+}
+
+#fakeimg {
+    background-color: rgb(158, 146, 146);
+    height: 300px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.p-card {
+    background-color: #fff;
+    float: left;
+    padding: 20px;
+    border-radius: 8px;
+    margin-right: 0px;
+    margin: 10px;
+    margin-inline-end: 0;
+}
+
+.p-responsive {
+    width: 50%;
+    float: left;
+}
+
+@media screen and (max-width: 800px) {
+
+    .p-responsive {
+        width: 100%;
+        padding: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+
+    .p-card {
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .Navs, .n-responsive {
+        width: 100%;
+    }
+}
+
+/* Navigation page styles */
+.Navs {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 5px;
+}
+
+.Navcard {
+    background-color: white;
+    padding: 30px;
+    margin-top: 20px;
+    margin-left: 0;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+
+.navcards {
+    text-align: center;
+    font-size: x-large;
+}
+
+.navlinks {
+    overflow: hidden;
+}
+
+.navlinks a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 5%;
+    text-decoration: none;
+    width: 100%;
+    font-size: larger;
+    border-radius: 8px;
+}
+
+.navlinks a:hover {
+    background-color: #f1f1f1;
+    color: rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 700px) {
+
+    .topnav a, .topnav>.print {
+        width: 100%;
+    }
+
+    .navcards {
+        font-size: large;
+    }
+
+    .card,
+    .accordian {
+        margin-top: 20px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.n-responsive {
+    width: 25%;
+    float: left;
+}
+
+@media only screen and (max-width: 700px) {
+    .n-responsive {
+        width: 100%;
+    }
+
+    .Navs {
+        margin-top: 5px;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+    }
+}

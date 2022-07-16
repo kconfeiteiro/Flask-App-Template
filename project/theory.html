@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+{% block content%}
+<div class="row">
+    <div class="leftcol">
+        <button type="button" class="accordion">What is Gyrochronology?</button>
+        <div class="panel">
+            <p>Gyrochronology is...</p>
+        </div>
+
+        <button type="button" class="accordion">What is ____?</button>
+        <div class="panel">
+            <p>Placeholder is....</p>
+        </div>
+
+        <button type="button" class="accordion">Placeholder</button>
+        <div class="panel">
+            <p>Placeholder is...</p>
+        </div>
+
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+    </div>
+
+
+    <div class="rightcol">
+        <div class="quicklinkCard">
+            <div class="quicklinkHead">
+                <h1>Quick links</h1>
+            </div>
+
+            <div class="navlinks">
+                <a href="#">Test</a>
+            </div>
+        </div>
+        <div id="clearfix"></div>
+    </div>
+</div>
+{% endblock content%}

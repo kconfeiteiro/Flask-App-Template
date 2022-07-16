@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="eng"><link rel="stylesheet" type="text/css" href="../styles.css" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="substyles.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="../main.html">Home</a>
+        <a href="researchersProfiles.html">Researchers</a>
+        <a href="theory.html">Theory</a>
+        <a href="https://www.nasa.gov/tess-transiting-exoplanet-survey-satellite">NASA</a>
+        <a href="contributers.html">Contributers</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="navigation.html">Navigation</a>
+        <button class="print" style="float:right" onclick="window.print()">Print</button>
+        <a href="legal.html" style="float:right">Legal</a>
+    </div>
+
+    {% block content %}{% endblock %}
+
+    <div class="footer">
+        <h1><span>&copy;</span> Copyright</h1>
+    </div>
+    
+</body>
