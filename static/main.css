@@ -1,0 +1,213 @@
+/* main styling for pages */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10px;
+    background-color: #f1f1f1;
+    overflow: auto;
+}
+
+.header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+    margin-bottom: 5px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.big-text {
+    text-align: justify;
+    font-size: larger;
+    margin: 5%;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+    height: 15%;
+    bottom: 0px;
+}
+
+p {
+    text-align: justify;
+}
+
+.cardtitle {
+    padding: 2px;
+    padding-bottom: 4px;
+    border-radius: 8px;
+    opacity: 100%;
+    text-align: center;
+}
+
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/* Hover effects */
+.card:hover,
+.quicklinkCard:hover,
+#Navs:hover,
+.accordian:hover {
+    box-shadow: 2px 2px 6px grey;
+}
+
+
+.quicklinkCard {
+    background-color: white;
+    padding: 20px;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: 10px;
+    border-radius: 8px;
+}
+
+.quicklinkHead {
+    background-color: rgb(230, 230, 230);
+    margin-top: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    text-align: center;
+}
+
+.quicklinkCard h1 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+/* navigation styling */
+.topnav,
+.topnav>.print {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a,
+.topnav>.print {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.print {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    outline: none;
+}
+
+.topnav a:hover,
+.topnav>.print:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Styles left and right columns with a 75%:25% ratio */
+.leftcol {
+    float: left;
+    width: 75%;
+}
+
+.rightcol {
+    float: right;
+    width: 25%;
+    background-color: #f1f1f1;
+}
+
+
+
+/* Fixes spacing */
+.clearfix:after,
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Interactive spacing for left and right column */
+@media screen and (max-width: 800px) {
+
+    .leftcol,
+    .rightcol {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+/* Style and activity for accoridan */
+.accordion {
+    background-color: white;
+    border-radius: 8px;
+    font-family: serif;
+    margin-right: 10px;
+    font-weight: bold;
+    margin-left: auto;
+    transition: 0.4s;
+    float: left;
+    text-align: left;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    padding: 15px;
+    color: black;
+    outline: none;
+    border: none;
+    width: 100%;
+    float: left;
+}
+
+.active,
+.accordian:hover {
+    background-color: rgb(80, 80, 80);
+    color: white;
+}
+
+.accordion:after {
+    content: '\2605';
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2606";
+    color: white;
+}
+
+.panel {
+    transition: max-height 0.2s ease-out;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: white;
+    margin-right: 5px;
+    margin-left: 5px;
+    overflow: hidden;
+    padding: 0 18px;
+    max-height: 0;
+}
