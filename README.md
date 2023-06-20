@@ -12,4 +12,4 @@ Before doing anything listed below, you must first clone the repository locally 
 
 ## About
 
-This repository can act as a template for anyone wanting to make a simple website using Flask. This is the most basic type of template, so feel free to add any other type of functionalities (like JavaScript) to this website. This website will only run locally, if you wish to deploy your website, you will need to use services like AWS or Microsoft Azure.
+This repository can act as a template for anyone wanting to make a simple website using Flask. This is the most basic type of template, so feel free to add any other type of functionalities (like JavaScript or Bootstrap) to this website. This website will only run locally, if you wish to deploy your website, you will need to use services like AWS or Microsoft Azure.
