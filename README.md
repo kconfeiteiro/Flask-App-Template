@@ -9,3 +9,7 @@ Before doing anything listed below, you must first clone the repository locally 
 1. You must first open the command prompt (making sure you are in the working directory, the same directory as `run.bat`)
 2. Then, you type `run.bat` into the command line and the commands from the batch file will automatically be typed into the command line
 3. Finally, you can open the files in your editor of choice and begin making changes to the website
+
+## About
+
+This repository can act as a template for anyone wanting to make a simple website using Flask. This is the most basic type of template, so feel free to add any other type of functionalities (like JavaScript) to this website.
