@@ -35,8 +35,8 @@ body {
     bottom: 0px;
 }
 
-p {
-    text-align: justify;
+p:not(.header p) {
+    text-align: justify !important;
 }
 
 .cardtitle {
@@ -57,13 +57,9 @@ p {
 }
 
 /* Hover effects */
-.card:hover,
-.quicklinkCard:hover,
-#Navs:hover,
-.accordian:hover {
+:where(.card, .quicklinkCard, #Navs, .accordian):hover {
     box-shadow: 2px 2px 6px grey;
 }
-
 
 .quicklinkCard {
     background-color: white;
@@ -89,7 +85,7 @@ p {
 
 /* navigation styling */
 .topnav,
-.topnav>.print {
+.topnav > .print {
     overflow: hidden;
     background-color: #333;
 }
@@ -125,7 +121,6 @@ p {
     clear: both;
 }
 
-
 /* Styles left and right columns with a 75%:25% ratio */
 .leftcol {
     float: left;
@@ -138,16 +133,12 @@ p {
     background-color: #f1f1f1;
 }
 
-
-
 /* Fixes spacing */
-.clearfix:after,
-.row:after {
+:where(.clearfix, .row):after {
     content: "";
     display: table;
     clear: both;
 }
-
 
 /* Interactive spacing for left and right column */
 @media screen and (max-width: 800px) {
@@ -210,4 +201,25 @@ p {
     overflow: hidden;
     padding: 0 18px;
     max-height: 0;
+}
+
+h2, h3 {
+    text-align: left !important;
+}
+
+.row {
+    width: clamp(2px, 60%, 500px);
+}
+
+.header > p {
+    margin-inline: auto !important;
+    text-align: center;
+}
+
+.card > h2 { 
+    border-bottom: 1px solid black;
+}
+
+.row > :is(.column.full, .card) {
+    width: 100% !important;
 }

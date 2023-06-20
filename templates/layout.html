@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="eng"><link rel="stylesheet" type="text/css" href="../main.css" />
-<html lang="eng"><link rel="stylesheet" type="text/css" href="../submain.css" />
+<html lang="eng"><link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }} "/>
+<html lang="eng"><link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='submain.css') }} "/>
 
 <head>
     <meta charset="UTF-8">
@@ -11,16 +11,7 @@
 
 <body>
     <div class="topnav">
-        <a href=" {{ url_for('home.html') }}">Home</a>
-        <!-- <a href="researchersProfiles.html">Researchers</a> -->
-        <a href="theory.html">Theory</a>
-        <!-- <a href="https://www.nasa.gov/tess-transiting-exoplanet-survey-satellite">NASA</a> -->
-        <!-- <a href="contributers.html">Contributers</a> -->
-        <!-- <a href="contact.html">Contact</a> -->
-        <a href="about.html">About</a>
-        <a href="navigation.html">Navigation</a>
-        <button class="print" style="float:right" onclick="window.print()">Print</button>
-        <a href="legal.html" style="float:right">Legal</a>
+        <a href="/home">Home</a>
     </div>
 
     {% block content %}{% endblock %}
