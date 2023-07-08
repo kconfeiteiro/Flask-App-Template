@@ -16,4 +16,4 @@ This repository can act as a template for anyone wanting to make a simple websit
 
 ## Quick Note
 
-I am not a web developer by trade, so please let me know if there are any inconsistencies 
+I am not a web developer by trade, so please let me know if there are any inconsistencies.
