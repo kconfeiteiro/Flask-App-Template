@@ -2,7 +2,7 @@
 
 This repository is a public template for a simple Flask Website Application. It includes a simple _Home_ page skeleton structure as well as basic HTML and CSS to kickstart a simple static website. You can make your website dynamic and interactive using JavaScript. While this is a relatively trivial setup for a web application, there are endless ways this can be customized for your own purpose.
 
-## How to run the website
+## How to Run the Flask App 
 
 Before doing anything listed below, you must first clone the repository locally onto your device. 
 
