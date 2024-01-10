@@ -27,4 +27,4 @@ This repository can act as a template for anyone wanting to make a simple websit
 
 ## Quick Note
 
-I am not a web developer by trade, so please let me know if there are any issues. You can contact the repository owner at [confeitk@outlook.com](mailto:confeitk@outlook.com)
+I am not a web developer by trade, so please let me know if there are any issues. You can contact me, the repository owner, at [confeitk@outlook.com](mailto:confeitk@outlook.com) or [confeitk@my.erau.edu](mailto:confeitk@my.erau.edu).
